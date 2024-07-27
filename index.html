@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="home" class="weather-container home-screen">
+        <form id="cityForm">
+            <h1>Enter City</h1>
+            <label for="city">City:</label>
+            <input type="text" id="cityInput" required>
+            <button type="submit" class="btn">Get Weather</button>
+        </form>
+    </div>
+
+    <div id="weather" class="weather-container weather-screen" style="display: none;">
+        <div class="current-weather">
+            <h1 id="cityName">City: </h1>
+            <h2 id="weatherCondition">Weather Condition</h2>
+            <h2 id="temperature">30°C</h2>
+            <p id="highLow">H:30° L:22°</p>
+        </div>
+        <div class="weather-details">
+            <div class="forecast">
+                <div class="forecast-item">
+                    <p>12 PM</p>
+                    <img src="cloudy-icon.png" alt="Cloudy">
+                    <p>26°C</p>
+                </div>
+                <div class="forecast-item">
+                    <p>3 PM</p>
+                    <img src="cloudy-icon.png" alt="Cloudy">
+                    <p>25°C</p>
+                </div>
+                <div class="forecast-item">
+                    <p>6 PM</p>
+                    <img src="rainy-icon.png" alt="Rainy">
+                    <p>24°C</p>
+                </div>
+            </div>
+        </div>
+        <button id="goBackButton" class="btn">Go Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

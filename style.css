@@ -1,0 +1,152 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.weather-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+form, .current-weather {
+    margin-bottom: 20px;
+}
+
+form h1, .current-weather h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #1E90FF;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #1E90FF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button.btn:hover {
+    background-color: #4682B4;
+}
+
+.current-weather {
+    margin-bottom: 20px;
+}
+
+.current-weather h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #FF4500;
+    margin: 0;
+}
+
+.current-weather p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.weather-details {
+    margin-bottom: 20px;
+}
+
+.weather-details p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    text-align: center;
+}
+
+.forecast-item p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.forecast-item img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Gradients for different weather conditions */
+.home-screen {
+    background: linear-gradient(to bottom right, #89CFF0, #4682B4);
+}
+
+.weather-screen {
+    background: linear-gradient(to bottom right, #FF7E5F, #FEB47B); /* Hot weather example */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    color: white;
+}
+
+.weather-screen.hot {
+    background: linear-gradient(to bottom right, #FF7E5F, #FEB47B);
+}
+
+.weather-screen.storm {
+    background: linear-gradient(to bottom right, #3A6073, #16222A);
+}
+
+.weather-screen.clear {
+    background: linear-gradient(to bottom right, #4CA1AF, #C4E0E5);
+}
