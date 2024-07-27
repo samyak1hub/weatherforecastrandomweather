@@ -26,8 +26,9 @@ You'll need a web browser to view the project. Make sure you have one of the fol
 1. *Clone the repository*
 
    Open your terminal (or command prompt) and run the following command to clone the repository to your local machine:
+   https://github.com/samyak1hub/weatherforecastrandomweather.git
 
-2. or simply download the ZIP file.
+3. or simply download the ZIP file.
 
 THANK YOU!
 
