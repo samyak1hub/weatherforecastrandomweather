@@ -7,7 +7,7 @@ Welcome to the Weather Forecast Random Weather project! This project displays ra
 - Displays random weather conditions with dynamic updates.
 - Simple and easy-to-understand code for beginners.
 - Fully functional using only HTML, CSS, and JavaScript.
-
+  
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine.
